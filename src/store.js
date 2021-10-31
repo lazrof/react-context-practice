@@ -2,6 +2,8 @@ import { createContext, useState } from "react";
 
 const globalContext = createContext();
 
+// Para hacerlo mas escalable se puede probar un
+// useReduce con action types y async calls
 const GlobalContextProvider = (props) => {
   // this state will be shared with all components
   const [store, setStore] = useState({ theme: "light" });
